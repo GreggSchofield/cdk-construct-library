@@ -1,6 +1,6 @@
 import * as cdk from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import { PlatformQueue } from '../src/test';
+import { PlatformQueue } from '../src';
 
 test('An single AWS SQS Queue is created', () => {
 
