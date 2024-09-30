@@ -10,6 +10,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   projenrcTs: true,
   repositoryUrl: 'https://github.com/GreggSchofield/cdk-construct-library',
 
+  gitIgnoreOptions: {
+    ignorePatterns: [
+      '.idea',
+    ],
+  },
+
   publishToPypi: {
     distName: 'GreggSchofield-cdk-construct-library',
     module: 'GreggSchofield_cdk-construct-library',
