@@ -193,7 +193,7 @@ jobs:
         continue-on-error: true
       - env:
           GITHUB_TOKEN: ${{ secrets.token }}
-        run: Set GITHUB_TOKEN environment variable
+        run: echo "setting GITHUB_TOKEN environment variable"
       - name: Release
         env:
           GIT_USER_NAME: github-actions
