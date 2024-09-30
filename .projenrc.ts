@@ -1,4 +1,5 @@
-import { awscdk } from 'projen';
+import {awscdk, LogLevel} from 'projen';
+
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Gregg Schofield',
   authorAddress: 'schofieldgregg@gmail.com',
@@ -8,6 +9,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'cdk-construct-library',
   projenrcTs: true,
   repositoryUrl: 'git@github.com:GreggSchofield/cdk-construct-library.git',
+
+  logging: {
+    level: LogLevel.VERBOSE,
+  },
 
   publishToPypi: {
     distName: 'GreggSchofield-cdk-construct-library',
