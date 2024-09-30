@@ -8,7 +8,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   jsiiVersion: '~5.5.0',
   name: 'cdk-construct-library',
   projenrcTs: true,
-  repositoryUrl: 'git@github.com:GreggSchofield/cdk-construct-library.git',
+  repositoryUrl: 'github.com/GreggSchofield/cdk-construct-library',
 
   publishToPypi: {
     distName: 'GreggSchofield-cdk-construct-library',

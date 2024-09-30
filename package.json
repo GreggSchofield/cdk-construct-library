@@ -2,7 +2,7 @@
   "name": "cdk-construct-library",
   "repository": {
     "type": "git",
-    "url": "git@github.com:GreggSchofield/cdk-construct-library.git"
+    "url": "github.com/GreggSchofield/cdk-construct-library"
   },
   "scripts": {
     "build": "npx projen build",
