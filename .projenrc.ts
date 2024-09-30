@@ -9,6 +9,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   projenrcTs: true,
   repositoryUrl: 'git@github.com:GreggSchofield/cdk-construct-library.git',
 
+  gitIgnoreOptions: {
+    ignorePatterns: [
+        '.idea/',
+    ]
+  }
+
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
