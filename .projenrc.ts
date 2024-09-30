@@ -16,6 +16,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
     ],
   },
 
+  publishToMaven: {
+    javaPackage: 'com.greggschofield.cdkconstructlibrary',
+    mavenGroupId: 'com.greggschofield.cdkconstructlibrary',
+    mavenArtifactId: 'cdkconstructlibrary-jsii',
+  },
+
   publishToPypi: {
     distName: 'GreggSchofield-cdk-construct-library',
     module: 'GreggSchofield_cdk-construct-library',
