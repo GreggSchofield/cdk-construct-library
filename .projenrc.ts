@@ -14,11 +14,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     level: LogLevel.VERBOSE,
   },
 
-  publishToPypi: {
-    distName: 'GreggSchofield-cdk-construct-library',
-    module: 'GreggSchofield_cdk-construct-library',
-  }
-
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
