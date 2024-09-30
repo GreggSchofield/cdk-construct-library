@@ -16,17 +16,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     ],
   },
 
-  publishToGo: {
-    prePublishSteps: [
-      {
-        run: 'echo "setting GITHUB_TOKEN environment variable"',
-        env: { GITHUB_TOKEN: '${{ secrets.token }}' },
-
-      },
-    ],
-    moduleName: 'github.com/GreggSchofield/cdk-construct-library-go',
-  },
-
   publishToPypi: {
     distName: 'GreggSchofield-cdk-construct-library',
     module: 'GreggSchofield_cdk-construct-library',
