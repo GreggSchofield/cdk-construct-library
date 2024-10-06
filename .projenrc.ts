@@ -21,6 +21,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
     module: 'GreggSchofield_cdk-construct-library',
   },
 
+  publishToGo: {
+    moduleName: 'github.com/GreggSchofield/cdk-construct-library-go',
+  }
+
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
