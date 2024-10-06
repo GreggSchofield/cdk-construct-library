@@ -16,6 +16,7 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
+    "package:go": "npx projen package:go",
     "package:js": "npx projen package:js",
     "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
@@ -123,6 +124,9 @@
       "python": {
         "distName": "GreggSchofield-cdk-construct-library",
         "module": "GreggSchofield_cdk-construct-library"
+      },
+      "go": {
+        "moduleName": "github.com/GreggSchofield/cdk-construct-library-go"
       }
     },
     "tsc": {
