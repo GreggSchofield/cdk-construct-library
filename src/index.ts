@@ -1,6 +1,7 @@
 import { aws_sqs } from 'aws-cdk-lib';
 import { DeadLetterQueue } from 'aws-cdk-lib/aws-sqs';
 import { Construct } from 'constructs';
+import { SecurityStandard } from './lib/types';
 
 /**
  * @description Properties for the PlatformQueue Construct
@@ -16,6 +17,8 @@ export interface PlatformQueueProps {
    * @description Whether the queue has a dead letter queue (dlq)
    */
   readonly dlq?: boolean;
+
+  readonly securityStandard?: SecurityStandard;
 }
 
 /**
