@@ -11,7 +11,7 @@ export interface PlatformQueueProps {
  * @jsii ignore
  */
 function createDeadLetterQueue(ctx: PlatformQueue): DeadLetterQueue {
-  const dlq = new aws_sqs.Queue(ctx, 'DeadLetterQueue',);
+  const dlq = new aws_sqs.Queue(ctx, 'DeadLetterQueue');
 
   return { maxReceiveCount: 1, queue: dlq };
 }
