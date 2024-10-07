@@ -21,6 +21,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
     githubTokenSecret: 'GO_GITHUB_TOKEN',
   },
 
+  publishToMaven: {
+    javaPackage: 'com.greggschofield.cdkconstructlibrary',
+    mavenGroupId: 'com.greggschofield',
+    mavenArtifactId: 'cdk-construct-library',
+  },
+
   publishToNuget: {
     dotNetNamespace: 'GreggSchofield.CdkConstructLibrary',
     packageId: 'GreggSchofield.CdkConstructLibrary',
