@@ -43,7 +43,7 @@ export class PlatformQueue extends Construct {
     new aws_sqs.Queue(this, 'PlatformQueue', {
       fifo: props.fifo,
       deadLetterQueue: props.dlq ? createDeadLetterQueue(this) : undefined,
-      retentionPeriod: props.securityStandard === SecurityStandard.SOC_2 ? Duration.days(365) : undefined,
+      retentionPeriod: props.securityStandard === SecurityStandard.SOC_2 ? Duration.days(14) : undefined,
     });
   }
 }
