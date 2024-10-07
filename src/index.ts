@@ -2,8 +2,19 @@ import { aws_sqs } from 'aws-cdk-lib';
 import { DeadLetterQueue } from 'aws-cdk-lib/aws-sqs';
 import { Construct } from 'constructs';
 
+/**
+ * Properties for the PlatformQueue Construct
+ */
 export interface PlatformQueueProps {
+
+  /**
+   * Whether the queue is first-in first-out (fifo)
+   */
   readonly fifo?: boolean;
+
+  /**
+   * Whether the queue has a dead letter queue (dlq)
+   */
   readonly dlq?: boolean;
 }
 
@@ -16,6 +27,9 @@ function createDeadLetterQueue(ctx: PlatformQueue): DeadLetterQueue {
   return { maxReceiveCount: 1, queue: dlq };
 }
 
+/**
+ * Construct that creates an AWS SQS queue with best practices
+ */
 export class PlatformQueue extends Construct {
   constructor(scope: Construct, id: string, props: PlatformQueueProps) {
     super(scope, id);
