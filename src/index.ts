@@ -10,12 +10,12 @@ export interface PlatformQueueProps {
   /**
    * Create a first-in first-out (fifo) queue.
    */
-  fifo?: boolean,
+  readonly fifo?: boolean,
 
   /**
    * Create a dead letter queue for failed messages.
    */
-  dlq?: boolean,
+  readonly dlq?: boolean,
 }
 
 /**
