@@ -21,6 +21,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
     githubTokenSecret: 'GO_GITHUB_TOKEN',
   },
 
+  publishToNuget: {
+    dotNetNamespace: 'GreggSchofield.CdkConstructLibrary',
+    packageId: 'GreggSchofield.CdkConstructLibrary',
+  },
+
   publishToPypi: {
     distName: 'GreggSchofield-cdk-construct-library',
     module: 'GreggSchofield_cdk-construct-library',
