@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import { PlatformQueue } from '../src';
-import { SecurityStandard } from '../src/lib/types';
+import { PlatformQueue } from '../src/queue';
+import { SecurityStandard } from '../src/types';
 
 test('An single AWS SQS Queue is created with DLQ', () => {
   const app = new cdk.App();
