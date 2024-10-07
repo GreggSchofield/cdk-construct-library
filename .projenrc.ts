@@ -12,7 +12,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   gitIgnoreOptions: {
     ignorePatterns: [
-      '.idea',
+      '.idea/',
     ],
   },
 
