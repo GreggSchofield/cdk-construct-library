@@ -18,7 +18,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   publishToGo: {
     moduleName: 'github.com/GreggSchofield/cdk-construct-library-go',
-    githubTokenSecret: 'CDK_CONSTRUCT_LIBRARY_GO_PAT',
+    githubTokenSecret: 'GO_GITHUB_TOKEN',
   },
 
   publishToPypi: {
