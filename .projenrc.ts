@@ -1,4 +1,5 @@
 import { awscdk } from 'projen';
+import { DependabotScheduleInterval } from 'projen/lib/github';
 
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Gregg Schofield',
@@ -9,6 +10,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'cdk-construct-library',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/GreggSchofield/cdk-construct-library',
+
+  depsUpgrade: false,
+  dependabot: true,
+  dependabotOptions: {
+    scheduleInterval: DependabotScheduleInterval.DAILY,
+  },
 
   gitIgnoreOptions: {
     ignorePatterns: [
