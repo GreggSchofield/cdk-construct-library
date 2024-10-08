@@ -4,22 +4,22 @@ import { Construct } from 'constructs';
 import { SecurityStandard } from './types';
 
 /**
- * @description Properties for the PlatformQueue Construct
+ * Properties for the PlatformQueue Construct
  */
 export interface PlatformQueueProps {
 
   /**
-   * @description Whether the queue is first-in first-out (fifo)
+   * Whether the queue is first-in first-out (fifo)
    */
   readonly fifo?: boolean;
 
   /**
-   * @description Whether the queue has a dead letter queue (dlq)
+   * Whether the queue has a dead letter queue (dlq)
    */
   readonly dlq?: boolean;
 
   /**
-   * @description The security standard for the queue
+   * The security standard for the queue
    */
   readonly securityStandard?: SecurityStandard;
 }
@@ -34,7 +34,7 @@ function createDeadLetterQueue(ctx: PlatformQueue): DeadLetterQueue {
 }
 
 /**
- * @description Construct that creates an AWS SQS queue with best practices
+ * Construct that creates an AWS SQS queue with best practices
  */
 export class PlatformQueue extends Construct {
   constructor(scope: Construct, id: string, props: PlatformQueueProps) {
